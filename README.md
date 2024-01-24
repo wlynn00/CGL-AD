@@ -15,9 +15,9 @@ A Dynamic Provenance Graph-Based Detector for Advanced Persistent Threats
 
 ## Run
 
-### parse
+### Parse
 
-**For frequency estimation（graph sketching）**
+**for frequency estimation（graph sketching）**
 
 ```
 # for single graph
@@ -25,18 +25,18 @@ parser/streamspot/parse_fast.py
 parser/camflow/parse.py
 ```
 
-**For temporal graph learning**
+**for temporal graph learning**
 
 ```
 parser/streamspot/parse_temporal.py
 parser/camflow/parse_temporal.py
 ```
 
-### graph representation
+### Graph representation
 
 #### frequency estimation
 
-Code in the analyzer folder is adapted from [crimson-unicorn/analyzer](https://github.com/crimson-unicorn/analyzer)
+code in the analyzer folder is adapted from [crimson-unicorn/analyzer](https://github.com/crimson-unicorn/analyzer)
 
 ```
 cd CGL-AD/analyzer/
@@ -54,11 +54,11 @@ python pretrain.py   # pretrain TGN
 python embedding.py   # TGN inference
 ```
 
-### anomaly detection
+### Anomaly detection
 
 ```
 cd CGL-AD/modeler/{dataset}
 python rcnn.py    # Bi-RCNN and detection
 ```
 
-> The modelr folder contains the trained models.
+> The modelr folder contains the trained models. TGN models are a bit large and need to be pulled using the git lfs tool.
